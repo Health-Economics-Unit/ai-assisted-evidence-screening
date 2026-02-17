@@ -1,0 +1,35 @@
+# =============================================
+# Instructions for Running Stage 1 Screening
+# =============================================
+
+# 1. Navigate to the folder where you want to clone the repo
+cd "C:\Path\To\Projects"
+
+# 2. Clone the repository (dev branch)
+git clone -b dev https://github.com/AkshataAhire/NHSCRB.git NHSCRB
+
+# 3. Navigate into the Stage 1 screening folder
+cd "C:\Path\To\Projects\NHSCRB\Screen_4_Exclude_PEC_NonPeerReviewed"
+
+# 4. Create a Python virtual environment
+python -m venv .venv
+
+# 5. Activate the virtual environment
+.\.venv\Scripts\activate.bat
+# (If this fails, try: .\.venv\Scripts\Activate.ps1 after setting execution policy)
+
+# 6. Install dependencies
+pip install -r ..\requirements.txt
+# or manually:
+# pip install openai pandas python-dotenv
+
+# 7. Set your OpenAI API key for this session
+$env:OPENAI_API_KEY="sk-your-api-key-here"
+
+# 8. Run the screening script
+python .\main_4.py --input .\data\361_articles_post_stage3_screen.csv --output .\data\screen_stage4.csv --sleep 0.3
+
+# Optional flags:
+#   --limit 5            process only first 5 rows
+#   --system system_prompt_1.txt  use a different system prompt file
+#   --sleep 0.5          add delay between API calls (avoid rate limits)
