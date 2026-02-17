@@ -206,5 +206,3 @@ Stages can be run independently or sequentially.
 - Strategic alignment may require contextual interpretation.
 - Financial savings detection depends on explicit terminology.
 - Manual oversight remains essential.
-
-## Repository Structure
