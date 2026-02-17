@@ -170,13 +170,13 @@ It is a structured screening accelerator.
 
 ## Repository Structure
 
-stage_01/ – Language & date eligibility
-stage_02/ – UK setting filter
-stage_03/ – Health & care context filter
-stage_04/ – Publication type integrity
-stage_05/ – Comparator & impact evidence
-stage_06/ – NHS Three Shifts alignment
-stage_07/ – Cash-releasing savings detection
+- stage_01 Language & date eligibility
+- stage_02 UK setting filter
+- stage_03 Health & care context filter
+- stage_04 Publication type integrity
+- stage_05 Comparator & impact evidence
+- stage_06 NHS Three Shifts alignment
+- stage_07 Cash-releasing savings detection
 
 Each stage contains:
 
