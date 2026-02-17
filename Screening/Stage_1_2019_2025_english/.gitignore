@@ -1,0 +1,27 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- OS/system clutter ----
+.DS_Store
+Thumbs.db
+
+# ---- Secrets ----
+.env
+*.key
+*.pem
+
+# ---- Data ----
+data/*.csv         # ignore all CSVs in data/
+!data/sample_articles.csv  # but keep the small test file
+
+# ---- Logs & temp ----
+*.log
+*.tmp
